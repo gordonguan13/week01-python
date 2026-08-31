@@ -1,11 +1,17 @@
-c = "s"
-m = str(input("what do u choose? (r/p/s) "))
-if m not in ["r", "p", "s"]:
-    print("thats invalid")
+import random
+m = str(input("what do u want to play? (r/p/s)"))
+def comp():
+    return random.choice(["r", "p", "s"])
+computer= comp()
+if m == computer:
+    print("tie")
+elif m == "r" and computer == "p":
+    print("you lose")
+elif m == "r" and computer == "s":
+    print("you win")
+elif m == "p" and computer == "r":
+    print("you win")
+elif m == "s" and computer == "p":
+    print("you win")
 else:
-    if m == "r":
-        print("u win")
-    elif m == "p":
-        print("u lose")
-    else:
-        print("tie")
+    print("you lose")
