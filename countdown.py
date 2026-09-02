@@ -1,4 +1,4 @@
-
-for n in [5,4,3,2,1]:
+f=int(input("number: "))
+for n in range(f,0,-1):
     print(n)
 print("liftoff")
