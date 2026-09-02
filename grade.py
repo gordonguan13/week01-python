@@ -7,7 +7,7 @@ elif s >=70 and s <= 79:
     print("you got a C")
 elif s >=60 and s <= 69:
     print("you got a D")
-elif s >0 and s<= 59:
+elif s >=0 and s<= 59:
     print("you got a F")
 else:
     print("the number wasnt in the 0-100 range.")

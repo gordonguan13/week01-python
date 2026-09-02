@@ -1,6 +1,5 @@
 import math
-r = int(input("radius: "))
-def area_circle():
+def area_circle(r):
     return math.pi * (r*r)
-x = area_circle()
+x = area_circle(5)
 print(x)
