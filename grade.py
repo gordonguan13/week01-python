@@ -1,14 +1,14 @@
-def grade(s):
+def letter_grade(s):
     if s >=90 and s <= 100:
         return "A"
-    elif s >=80 and s <= 89:
+    elif s >=80:
         return "B"
-    elif s >=70 and s <= 79:
+    elif s >=70:
         return "C"
-    elif s >=60 and s <= 69:
+    elif s >=60:
         return "D"
-    elif s >=0 and s<= 59:
+    elif s >=0:
         return "F"
     else:
-        print("the number wasnt in the 0-100 range.")
-print(grade(78))
+        return "the number wasnt in the 0-100 range."
+print(letter_grade(78))
